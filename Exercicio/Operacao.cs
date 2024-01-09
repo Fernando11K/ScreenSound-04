@@ -26,7 +26,7 @@ internal class Operacao
         {         
             Console.Write("Digite o índice do elemento a ser buscado: ");
             var index = int.Parse(Console.ReadLine());
-             Console.Write($"Elemento de índice {index}: {lista[index]}");
+             Console.Write($"Elemento no índice {index}: {lista[index]}");
         }
         catch (Exception e)
         {
