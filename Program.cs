@@ -16,14 +16,14 @@ using (HttpClient client = new HttpClient())
         //LinqFilter.FiltrarArtistasPorGeneroMusical(musicas,"pop");
         //LinqFilter.FiltrarMusicasDeUmArtista(musicas, "U2");
 
-        var musicasPreferidasDoDaniel = new MusicasPreferidas("Daniel");
-        musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[1]);
-        musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[377]);
-        musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[4]);
-        musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[6]);
-        musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[1467]);
+        //var musicasPreferidasDoDaniel = new MusicasPreferidas("Daniel");
+        //musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[1]);
+        //musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[377]);
+        //musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[4]);
+        //musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[6]);
+        //musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[1467]);
 
-        musicasPreferidasDoDaniel.ExibirMusicasFavoritas();
+        //musicasPreferidasDoDaniel.ExibirMusicasFavoritas();
 
         var musicasPreferidasEmilly = new MusicasPreferidas("Emy");
         musicasPreferidasEmilly.AdicionarMusicasFavoritas(musicas[500]);
@@ -33,6 +33,9 @@ using (HttpClient client = new HttpClient())
         musicasPreferidasEmilly.AdicionarMusicasFavoritas(musicas[71]);
         musicasPreferidasEmilly.ExibirMusicasFavoritas();
 
+       // musicasPreferidasEmilly.GerarArquivoJson();
+
+       musicasPreferidasEmilly.GerarDocumentoTXTComAsMusicasFavoritas();
 
 
 
